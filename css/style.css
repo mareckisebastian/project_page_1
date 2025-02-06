@@ -61,9 +61,16 @@ html {
   font-size: 10px;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 header {
   height: 100vh;
   display: flex;
+  color: #fff;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background: url("../assets/img/bg_header_small.webp") center/cover fixed;
@@ -78,23 +85,26 @@ header {
     background-image: url("../assets/img/bg_header_big.webp");
   }
 }
-
-h1 {
-  color: #fff;
+header .head-big-text {
+  flex-basis: 20%;
   font-size: 3.6rem;
   text-align: center;
   padding: 1rem;
   line-height: 3ex;
 }
 @media screen and (min-width: 768px) {
-  h1 {
+  header .head-big-text {
     font-size: 5rem;
   }
 }
 @media screen and (min-width: 1024px) {
-  h1 {
+  header .head-big-text {
     font-size: 7rem;
   }
+}
+
+.btn-header-main {
+  background-color: #465902;
 }
 
 main {
