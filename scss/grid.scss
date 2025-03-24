@@ -33,6 +33,12 @@
         }
     }
 
+    &-m-33 {
+        @include media-queries {
+        flex-basis: 33%;
+        }
+    }
+
     &-m-25 {
         @include media-queries {
         flex-basis: 25%;
@@ -45,9 +51,21 @@
         }
     }
 
+    &-l-33 {
+        @include media-queries("l") {
+        flex-basis: 33%;
+        }
+    }
+
     &-l-25 {
         @include media-queries("l") {
         flex-basis: 25%;
+        }
+    }
+
+    &-xl-20 {
+        @include media-queries("xl") {
+            flex-basis: 20%;
         }
     }
 }
