@@ -76,6 +76,16 @@ a {
   text-decoration: none;
 }
 
+p {
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+  padding: 1rem 0;
+  font-weight: bold;
+}
+
 .container {
   width: 96%;
   margin: 0 auto;
@@ -278,6 +288,70 @@ section h2 {
   font-size: 3.4rem;
   text-align: center;
   margin-bottom: 4rem;
+}
+
+.image-box {
+  display: block;
+  width: 100%;
+  border: 1px solid gray;
+  border-radius: 0.4rem;
+  box-shadow: 0 0 1.5rem gray;
+  transition: 0.5s;
+}
+.image-box:hover {
+  box-shadow: 0 0 2.5rem;
+  cursor: pointer;
+}
+.image-box__title {
+  text-align: center;
+}
+.image-box__picture {
+  width: 100%;
+}
+.image-box__text {
+  padding: 10px;
+}
+
+input, textarea, button {
+  font-size: 1.7rem;
+  display: block;
+  margin-bottom: 2rem;
+  border-radius: 0.6rem;
+  border: 1px solid lightgray;
+  transition: 0.5s;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 2rem;
+  resize: none;
+  outline: 0;
+}
+input:focus, textarea:focus {
+  border: 1px solid gray;
+  background-color: #F2E6D8;
+}
+
+form button {
+  width: 40%;
+  padding: 1.5rem;
+  background-color: gray;
+}
+form button:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+footer {
+  height: 40vh;
+  background-color: #0d0d0d;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
